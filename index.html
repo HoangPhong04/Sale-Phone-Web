@@ -24,7 +24,7 @@
                 <li><a href=""><i class="fa-solid fa-truck-fast"></i>Tra cứu đơn hàng</a></li>
                 <li><a href=""><i class="fa-solid fa-list"></i>Danh mục</a></li>
                 <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>
-                <li><a href=""><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
+                <li id="form-DN"><a href="#"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
                     <div class="adress-form">
                         <div class="adress-form-content">
                             <h2>Chọn địa chỉ nhận hàng <span id="adress-close"><i class="fa-solid fa-xmark"></i></span></h2>
@@ -47,6 +47,48 @@
                             </form>
                         </div>
                     </div>
+
+                    <section class="form-DN">
+                        <div class="form-DN-content">
+                            <h2>ĐĂNG NHẬP <span id="closeform"><i class="fa-solid fa-xmark"></i></span></h2>
+                            <form onsubmit="dangnhap()">
+                                <div class="input-field">
+                                    <input id="username" type="text" placeholder="User name">
+                                </div>
+                                <div class="input-field">
+                                    <input id="password" type="text" placeholder="Password">
+                                </div>
+                                <button id="btn" class="btn">Xác Nhận</button>
+                            </form>     
+                            
+                        </div>
+                    </section>
+
+                    <ul>
+                        <div class="address-form">
+                            <div class="form-content1">
+                                <h2>ĐĂNG KÝ <span id="close-form-DK"><i class="fa-solid fa-xmark"></i></span></h2>
+                            
+                                <form onsubmit="dangky()">
+                                    <div class="input-field">
+                                        <input id="username" type="text" placeholder="User name">
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="email" type="text" placeholder="Email">
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="password" type="text" placeholder="Password">
+                                    </div>
+                                    <div class="input-field">
+                                        <input id="password" type="text" placeholder="Comfirm password">
+                                    </div>
+                                    <button id="btndangky" class="btn">Xác Nhận</button>
+                                </form>     
+                                    
+                                    <p>Đã có tài khoản <i class="fa-solid fa-arrow-right"></i><a href="">Đăng nhập</a></p>
+                            </div>
+                        </div>
+                    </ul>
             </ul>
         </div>
     </nav>
@@ -205,11 +247,11 @@
                     </div>
                     
                     <div class="slider-content-left-buttom">
-                        <li class="active">IP 15 Pro<br>ưu đãi đến 5.500.000đ</li>
-                        <li>Tiêu đề 2</li>
-                        <li>Tiêu đề 3</li>
-                        <li>Tiêu đề 4</li>
-                        <li>Tiêu đề 5</li>
+                        <li class="active">IP 15 Pro đãi đến 5.500.000<sup>đ</sup></li>
+                        <li>Galaxy Tab S9 FE</li>
+                        <li>Xiaomi 13T giá từ 11.990.000<sup>đ</sup></li>
+                        <li>Galaxy S23 Ultra</li>
+                        <li>Xiaomi Watch 2 Pro</li>
                     </div>
                 </div>
                 <div class="slider-content-right">
@@ -220,6 +262,108 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <section class="banner-one">
+        <div class="container">
+            <img src="./image/banner-mid.webp" alt="">
+        </div>
+    </section>
+    <!-- -----------------slider-product------------------------ -->
+    <section class="slider-product">
+        <div class="container">
+            <div class="slider-product-content">
+                <div class="slider-product-content-title">
+                    <h2>HOT SALE GIÁ SỐC</h2>
+                </div>
+                <div class="slider-product-content-items">
+                    <div class="slider-product-content-item">
+                        <img src="image/iphone-15-pro-max-512gb.webp" alt="">
+                        <div class="slider-product-content-item-text">
+                            <li>IPhone 15 Pro Max 256GB</li>   
+                            <li>Online giá rẻ</li>
+                            <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                            <li>39.990.000<sup>đ</sup></li>
+                            <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-content-item">
+                        <img src="image/vn_iphone_15_pink.webp" alt="">
+                        <div class="slider-product-content-item-text">
+                            <li>IPhone 15 128GB</li>   
+                            <li>Online giá rẻ</li>
+                            <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
+                            <li>21.690.000<sup>đ</sup></li>
+                            <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-content-item">
+                        <img src="image/IP_14PRM.webp" alt="">
+                        <div class="slider-product-content-item-text">
+                            <li>IPhone 14 Pro Max 128GB</li>   
+                            <li>Online giá rẻ</li>
+                            <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
+                            <li>26.490.000<sup>đ</sup></li>
+                            <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-content-item">
+                        <img src="image/galaxys23ultra.webp" alt="">
+                        <div class="slider-product-content-item-text">
+                            <li>Samsung Galaxy S23 Ultra 256GB</li>   
+                            <li>Online giá rẻ</li>
+                            <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
+                            <li>21.290.000<sup>đ</sup></li>
+                            <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="slider-product-content-item">
+                        <img src="image/Samsung_Zflip5.webp" alt="">
+                        <div class="slider-product-content-item-text">
+                            <li>Samsung Galaxy Z Flip5 256GB</li>   
+                            <li>Online giá rẻ</li>
+                            <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
+                            <li>21.990.000<sup>đ</sup></li>
+                            <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>

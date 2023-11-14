@@ -594,3 +594,44 @@ nav ul li:nth-child(8):hover a{
 .slider-product-content-item-text li:last-child i {
     color: #F59E0B;
 }
+/* ---------------slider-SP--------------- */
+.slider-product-content-container {
+    position: relative;
+    overflow: hidden;
+}
+.slider-product-content-run {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider-product-content-run i{
+    color: #333;
+    font-size: 32px;
+    height: 70px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border: 1px solid none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.slider-product-content-items-content {
+    position: relative;
+    height: 550px;
+    transition: all 0.3s ease;
+}
+.slider-product-content-items {
+    position: absolute;
+}
+.slider-product-content-items:nth-child(2) {
+    transform: translateX(100%);
+}
+.slider-product-content-items:nth-child(3) {
+    transform: translateX(200%);
+}

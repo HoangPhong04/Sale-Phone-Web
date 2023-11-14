@@ -97,3 +97,23 @@ function imgauto() {
     // console.log(index)
 }
 setInterval(imgauto,4000)
+// ------------------slider-SP-------------
+const rightruntwo = document.querySelector('.fa-angle-right-two')
+const leftruntwo = document.querySelector('.fa-angle-left-two')
+const imgtwo = document.querySelectorAll('.slider-product-content-items')
+// console.log(rightruntwo)
+// console.log(leftruntwo)
+rightruntwo.addEventListener("click", function(){
+    index = index +1
+    if(index>imgtwo.length-1){
+        index = 0
+    }
+    document.querySelector(".slider-product-content-items-content").style.right = index *100+"%"
+})
+leftruntwo.addEventListener("click", function(){
+    index = index -1
+    if(index<=0){
+        index = imgtwo.length-1
+    }
+    document.querySelector(".slider-product-content-items-content").style.right = index *100+"%"
+})

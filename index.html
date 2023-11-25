@@ -8,547 +8,746 @@
     <title>Web mobile</title>
 </head>
 <body>
-    <header>
-        <img style="height: 40px;" src="./image/banner1.webp" alt="">
-        <img style="height: 40px;" src="./image/banner2.webp">
-        <img style="height: 40px;" src="./image/banner3.webp">
-    </header>
+    <div class="body">
+        <header>
+            <img style="height: 40px;" src="./image/banner1.webp" alt="">
+            <img style="height: 40px;" src="./image/banner2.webp">
+            <img style="height: 40px;" src="./image/banner3.webp">
+        </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href=""><img style="width: 150px;" src="image/logo.png"></a></li>
-                <li id="adress-form"><a href="#"><i class="fa-solid fa-location-dot"></i> TP HCM<i class="fas fa-sort-down"></i></a></li>
-                <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa-solid fa-magnifying-glass"></i></li>               
-                <li><a href=""><i class="fa-solid fa-phone"></i>Gọi mua hàng <br> 0987654321</a></li>
-                <li><a href=""><i class="fa-solid fa-truck-fast"></i>Tra cứu đơn hàng</a></li>
-                <li><a href=""><i class="fa-solid fa-list"></i>Danh mục</a></li>
-                <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>
-                <li id="form-DN"><a href="#"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
-                    <div class="adress-form">
-                        <div class="adress-form-content">
-                            <h2>Chọn địa chỉ nhận hàng <span id="adress-close"><i class="fa-solid fa-xmark"></i></span></h2>
-                            <form action="">
-                                <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
-                                <select name="" >
-                                    <option value="">--Chọn đỉa điểm</option>
-                                    <option value="">--TP HCM</option>
-                                </select>
-                                <select name="">
-                                    <option value="">--Chọn Quận\Huyện </option>
-                                    <option value="">--TP HCM</option>
-                                </select>
-                                <select name="" >
-                                    <option value="">--Chọn Phường\Xã</option>
-                                    <option value="">--TP HCM</option>
-                                </select>
-                                <input type="text" placeholder="Số nhà, Tên đường">
-                                <button>Xác nhận</button>
-                            </form>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href=""><img style="width: 150px;" src="image/logo.png"></a></li>
+                    <li id="adress-form"><a href="#"><i class="fa-solid fa-location-dot"></i> TP HCM<i class="fas fa-sort-down"></i></a></li>
+                    <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa-solid fa-magnifying-glass"></i></li>               
+                    <li><a href=""><i class="fa-solid fa-phone"></i>Gọi mua hàng <br> 0987654321</a></li>
+                    <li><a href=""><i class="fa-solid fa-truck-fast"></i>Tra cứu đơn hàng</a></li>
+                    <li><a href=""><i class="fa-solid fa-list"></i>Danh mục</a></li>
+                    <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>
+                    <li id="form-DN"><a href="#"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
+                        <div class="adress-form">
+                            <div class="adress-form-content">
+                                <h2>Chọn địa chỉ nhận hàng <span id="adress-close"><i class="fa-solid fa-xmark"></i></span></h2>
+                                <form action="">
+                                    <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                                    <select name="" >
+                                        <option value="">--Chọn đỉa điểm</option>
+                                        <option value="">--TP HCM</option>
+                                    </select>
+                                    <select name="">
+                                        <option value="">--Chọn Quận\Huyện </option>
+                                        <option value="">--TP HCM</option>
+                                    </select>
+                                    <select name="" >
+                                        <option value="">--Chọn Phường\Xã</option>
+                                        <option value="">--TP HCM</option>
+                                    </select>
+                                    <input type="text" placeholder="Số nhà, Tên đường">
+                                    <button>Xác nhận</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
 
-                    <section class="form-DN">
-                        <div class="form-DN-content">
-                            <h2>ĐĂNG NHẬP <span id="closeform"><i class="fa-solid fa-xmark"></i></span></h2>
-                            <form onsubmit="dangnhap()">
-                                <div class="input-field">
-                                    <input id="username" type="text" placeholder="User name">
-                                </div>
-                                <div class="input-field">
-                                    <input id="password" type="text" placeholder="Password">
-                                </div>
-                                <button id="btn" class="btn">Xác Nhận</button>
-                            </form>     
-                            
-                        </div>
-                    </section>
-
-                    <ul>
-                        <div class="address-form">
-                            <div class="form-content1">
-                                <h2>ĐĂNG KÝ <span id="close-form-DK"><i class="fa-solid fa-xmark"></i></span></h2>
-                            
-                                <form onsubmit="dangky()">
+                        <section class="form-DN">
+                            <div class="form-DN-content">
+                                <h2>ĐĂNG NHẬP <span id="closeform"><i class="fa-solid fa-xmark"></i></span></h2>
+                                <form onsubmit="dangnhap()">
                                     <div class="input-field">
                                         <input id="username" type="text" placeholder="User name">
                                     </div>
                                     <div class="input-field">
-                                        <input id="email" type="text" placeholder="Email">
-                                    </div>
-                                    <div class="input-field">
                                         <input id="password" type="text" placeholder="Password">
                                     </div>
-                                    <div class="input-field">
-                                        <input id="password" type="text" placeholder="Comfirm password">
-                                    </div>
-                                    <button id="btndangky" class="btn">Xác Nhận</button>
+                                    <button id="btn" class="btn">Xác Nhận</button>
+                                    <p>Bạn chưa có tài khoản? <a href="">Đăng ký</a></p>
                                 </form>     
-                                    
-                                    <p>Đã có tài khoản <i class="fa-solid fa-arrow-right"></i><a href="">Đăng nhập</a></p>
+                                
+                            </div>
+                        </section>
+
+                        <ul>
+                            <div class="address-form">
+                                <div class="form-content1">
+                                    <h2>ĐĂNG KÝ <span id="close-form-DK"><i class="fa-solid fa-xmark"></i></span></h2>
+                                
+                                    <form onsubmit="dangky()">
+                                        <div class="input-field">
+                                            <input id="username" type="text" placeholder="User name">
+                                        </div>
+                                        <div class="input-field">
+                                            <input id="email" type="text" placeholder="Email">
+                                        </div>
+                                        <div class="input-field">
+                                            <input id="password" type="text" placeholder="Password">
+                                        </div>
+                                        <div class="input-field">
+                                            <input id="password" type="text" placeholder="Comfirm password">
+                                        </div>
+                                        <button id="btndangky" class="btn">Xác Nhận</button>
+                                    </form>     
+                                        
+                                        <p>Đã có tài khoản <i class="fa-solid fa-arrow-right"></i><a href="">Đăng nhập</a></p>
+                                </div>
+                            </div>
+                        </ul>
+                </ul>
+            </div>
+        </nav>
+        <section class="menu3">
+            <div class="container">
+                <div class="menu3-content">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>IPHONE  <i  class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>SAMSUNG  <i class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>REALME  <i class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>OPPO  <i class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>VIVO  <i class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>Phụ kiện  <i class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+                                    <li><a href="">Apple</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------Slider--------------------------- -->
+        <section class="slider">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <div class="slider-content-left-top-container">
+                            <div class="slider-content-left-top">
+                                <a href=""><img src="image/slider v1.webp" alt=""></a>
+                                <a href=""><img src="image/slider v2.webp" alt=""></a>
+                                <a href=""><img src="image/slider v3.webp" alt=""></a>
+                                <a href=""><img src="image/slider v4.webp" alt=""></a>
+                                <a href=""><img src="image/slider v5.webp" alt=""></a>
+                            </div>
+                            <div class="slider-content-left-top-run">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
-                    </ul>
-            </ul>
-        </div>
-    </nav>
-    <section class="menu3">
-        <div class="container">
-            <div class="menu3-content">
-                <ul>
-                    <li><a href=""><i class="fa-solid fa-mobile-button"></i>Điện thoại  <i  class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
+                        
+                        <div class="slider-content-left-buttom">
+                            <li class="active">IP 15 Pro đãi đến 5.500.000<sup>đ</sup></li>
+                            <li>Galaxy Tab S9 FE</li>
+                            <li>Xiaomi 13T giá từ 11.990.000<sup>đ</sup></li>
+                            <li>Galaxy S23 Ultra</li>
+                            <li>Xiaomi Watch 2 Pro</li>
                         </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-headphones-simple"></i>Tai nghe  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-laptop"></i>Laptop  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-tablet"></i>Tablet  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-camera"></i>Camera, Đồng hồ  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-plug-circle-bolt"></i>Phụ kiện  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-tv"></i>Tivi  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-bullhorn"></i>Khuyến Mãi  <i class="fas fa-sort-down"></i></a>
-                        <div class="submenu">
-                            <ul>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Apple</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
+                    </div>
+                    <div class="slider-content-right">
+                        <li><a href=""><img src="image/right 1.png" alt=""></a></li>
+                        <li><a href=""><img src="image/right 2.png" alt=""></a></li>
+                        <li><a href=""><img src="image/right 2.png" alt=""></a></li>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- ----------------------Slider--------------------------- -->
-    <section class="slider">
-        <div class="container">
-            <div class="slider-content">
-                <div class="slider-content-left">
-                    <div class="slider-content-left-top-container">
-                        <div class="slider-content-left-top">
-                            <a href=""><img src="image/slider v1.webp" alt=""></a>
-                            <a href=""><img src="image/slider v2.webp" alt=""></a>
-                            <a href=""><img src="image/slider v3.webp" alt=""></a>
-                            <a href=""><img src="image/slider v4.webp" alt=""></a>
-                            <a href=""><img src="image/slider v5.webp" alt=""></a>
+        </section>
+        <section class="banner-one">
+            <div class="container">
+                <img src="./image/banner-mid.webp" alt="">
+            </div>
+        </section>
+        <!-- -----------------slider-product------------------------ -->
+        <section class="slider-product">
+            <div class="container">
+                <div class="slider-product-content">
+                    <div class="slider-product-content-title">
+                        <h2>HOT SALE GIÁ SỐC</h2>
+                    </div>
+                    <div class="slider-product-content-container">
+                    
+                        <div class="slider-product-content-items-content">
+                            <!-- -----------------1----------------- -->
+                            <div class="slider-product-content-items">
+                                <div class="slider-product-content-item">
+                                    <img src="image/iphone-15-pro-max-512gb.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/vn_iphone_15_pink.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
+                                        <li>21.690.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/IP_14PRM.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 14 Pro Max 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
+                                        <li>26.490.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/galaxys23ultra.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy S23 Ultra 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
+                                        <li>21.290.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/Samsung_Zflip5.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy Z Flip5 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
+                                        <li>21.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -----------------2----------------- -->
+                            <div class="slider-product-content-items">
+                                <div class="slider-product-content-item">
+                                    <img src="image/9_ro_plus-list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/find-n3-flip-vang_1-list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
+                                        <li>21.690.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/find_n3_gold-list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 14 Pro Max 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
+                                        <li>26.490.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/galaxys23ultra.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy S23 Ultra 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
+                                        <li>21.290.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/iphone-13_2_list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy Z Flip5 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
+                                        <li>21.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -----------------3----------------- -->
+                            <div class="slider-product-content-items">
+                                <div class="slider-product-content-item">
+                                    <img src="image/iphone-14_1-list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/vn_iphone_15_pink.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 15 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
+                                        <li>21.690.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/samsung-galaxy-z-flip-5-256gb_1_4-list.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>IPhone 14 Pro Max 128GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
+                                        <li>26.490.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/galaxys23ultra.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy S23 Ultra 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
+                                        <li>21.290.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-content-item">
+                                    <img src="image/Samsung_Zflip5.webp" alt="">
+                                    <div class="slider-product-content-item-text">
+                                        <li>Samsung Galaxy Z Flip5 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
+                                        <li>21.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slider-content-left-top-run">
-                            <i class="fa-solid fa-angle-left"></i>
-                            <i class="fa-solid fa-angle-right"></i>
+                        
+                    
+                        <div class="slider-product-content-run">
+                            <i class="fa-solid fa-angle-left fa-angle-left-two"></i>
+                            <i class="fa-solid fa-angle-right fa-angle-right-two"></i>
                         </div>
                     </div>
                     
-                    <div class="slider-content-left-buttom">
-                        <li class="active">IP 15 Pro đãi đến 5.500.000<sup>đ</sup></li>
-                        <li>Galaxy Tab S9 FE</li>
-                        <li>Xiaomi 13T giá từ 11.990.000<sup>đ</sup></li>
-                        <li>Galaxy S23 Ultra</li>
-                        <li>Xiaomi Watch 2 Pro</li>
-                    </div>
-                </div>
-                <div class="slider-content-right">
-                    <li><a href=""><img src="image/right 1.png" alt=""></a></li>
-                    <li><a href=""><img src="image/right 2.png" alt=""></a></li>
-                    <li><a href=""><img src="image/right 2.png" alt=""></a></li>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="banner-one">
-        <div class="container">
-            <img src="./image/banner-mid.webp" alt="">
-        </div>
-    </section>
-    <!-- -----------------slider-product------------------------ -->
-    <section class="slider-product">
-        <div class="container">
-            <div class="slider-product-content">
-                <div class="slider-product-content-title">
-                    <h2>HOT SALE GIÁ SỐC</h2>
-                </div>
-                <div class="slider-product-content-container">
-                    <div class="slider-product-content-items-content">
-                        <div class="slider-product-content-items">
-                            <div class="slider-product-content-item">
-                                <img src="image/iphone-15-pro-max-512gb.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 Pro Max 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
-                                    <li>39.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/vn_iphone_15_pink.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
-                                    <li>21.690.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/IP_14PRM.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 14 Pro Max 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
-                                    <li>26.490.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/galaxys23ultra.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy S23 Ultra 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
-                                    <li>21.290.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/Samsung_Zflip5.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy Z Flip5 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
-                                    <li>21.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
+        </section>
+        <!-- ----------------product Gallery------------------------ -->
+        <section class="product-gallery-one">
+            <div class="container">
+                <div class="product-gallery-one-content">
+                    <div class="product-gallery-one-content-title">
+                        <h2>ĐIỆN THOẠI NỔI BẬT</h2>
+                        <ul>
+                            <li><a href="">IPhone</a></li>
+                            <li><a href="">SamSung Galaxy Zflip 5</a></li>
+                            <li><a href="">Xiaomi A13</a></li>
+                            <li><a href="">Xem tất cả</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-gallery-one-content-list">
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/samsung-galaxy-s23-ultra-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
                         </div>
-                        <div class="slider-product-content-items">
-                            <div class="slider-product-content-item">
-                                <img src="image/iphone-15-pro-max-512gb.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 Pro Max 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
-                                    <li>39.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/vn_iphone_15_pink.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
-                                    <li>21.690.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/IP_14PRM.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 14 Pro Max 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
-                                    <li>26.490.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/galaxys23ultra.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy S23 Ultra 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
-                                    <li>21.290.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/Samsung_Zflip5.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy Z Flip5 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
-                                    <li>21.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/find-n3-flip-vang_1-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
                         </div>
-                        <div class="slider-product-content-items">
-                            <div class="slider-product-content-item">
-                                <img src="image/iphone-15-pro-max-512gb.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 Pro Max 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
-                                    <li>39.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/vn_iphone_15_pink.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 15 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">22.990.000<sup>đ</sup></a> <span>-6%</span></li>
-                                    <li>21.690.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>20.190.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/IP_14PRM.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>IPhone 14 Pro Max 128GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">29.990.000<sup>đ</sup></a> <span>-12%</span></li>
-                                    <li>26.490.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>24.490.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/galaxys23ultra.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy S23 Ultra 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">31.990.000<sup>đ</sup></a> <span>-33%</span></li>
-                                    <li>21.290.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.290.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
-                            <div class="slider-product-content-item">
-                                <img src="image/Samsung_Zflip5.webp" alt="">
-                                <div class="slider-product-content-item-text">
-                                    <li>Samsung Galaxy Z Flip5 256GB</li>   
-                                    <li>Online giá rẻ</li>
-                                    <li><a href="">25.990.000<sup>đ</sup></a> <span>-15%</span></li>
-                                    <li>21.990.000<sup>đ</sup></li>
-                                    <li>Giá lên đời: </li><li>19.990.000<sup>đ</sup></li>
-                                    <li>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </li>
-                                </div>
-                            </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/xiaomi-redmi-note-12_1-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/samsung-galaxy-z-flip-5-256gb_1_4-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/iphone-15-pro-max_list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/find_n3_gold-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/iphone-14_1-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/realme-c55-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/9_ro_plus-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
+                        </div>
+                        <div class="product-gallery-one-content-list-item">
+                            <img src="image/rogphone-list.webp" alt="">
+                                    <div class="product-gallery-one-content-list-item-text">
+                                        <li>IPhone 15 Pro Max 256GB</li>   
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">40.990.000<sup>đ</sup></a> <span>-2%</span></li>
+                                        <li>39.990.000<sup>đ</sup></li>
+                                        <li>Giá lên đời: </li><li>37.990.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </div>
                         </div>
                     </div>
-                    
-                
-                    <div class="slider-product-content-run">
-                        <i class="fa-solid fa-angle-left fa-angle-left-two"></i>
-                        <i class="fa-solid fa-angle-right fa-angle-right-two"></i>
-                    </div>
+
                 </div>
-                
             </div>
-        </div>
-    </section>
-<script src="script.js"></script>
+        </section>
+        <!-- --------------------footer----------------------------- -->
+        <section class="footer">
+            <div class="container">
+                <div class="container-content">
+                    <div class="container-content-text">
+                        <h3>Tổng đài hộ trợ miễn phí</h3>
+                        <li style="color: #fff;">Hotline: <a href="">0989.999.999</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Thông tin danh sách</h3>
+                            <li><a href="">Mua hàng và thanh toán Online</a></li>
+                            <li><a href="">Mua hàng trả góp Online</a></li>
+                            <li><a href="">Chính sách giao hàng</a></li>
+                            <li><a href="">Tra điểm Smember</a></li>
+                            <li><a href="">Xem ưu đãi Smember</a></li>
+                            <li><a href="">Tra thông tin bảo hành</a></li>
+                            <li><a href="">Tra cứu hoá đơn điện tử</a></li>
+                            <li><a href="">Thông tin hoá đơn mua hàng</a></li>
+                            <li><a href="">Trung tâm bảo hành chính hãng</a></li>
+                            <li><a href="">Quy định về việc sao lưu dữ liệu</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Dịch vụ khác</h3>
+                            <li><a href="">Ưu đãi thanh toán</a></li>
+                            <li><a href="">Quy chế hoạt động</a></li>
+                            <li><a href="">Chính sách Bảo hành</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Kết nối với chúng tôi</h3>
+                    </div>
+                </div>
+                <p>Copyright by SalePhoneWeb</p>
+            </div>
+        </section>
+    <script src="script.js"></script>
+    </div>
 </body>
 </html>

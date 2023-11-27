@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="sign-in.css">
+    <title>Web mobile</title>
+</head>
+<body>
+    <div class="body">
+        <header >
+            <!-- <img style="height: 40px;" src="./image/banner1.webp" alt="">
+            <img style="height: 40px;" src="./image/banner2.webp">
+            <img style="height: 40px;" src="./image/banner3.webp"> -->
+        </header>
+
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href=""><img style="width: 150px;" src="image/logo.png"></a></li>
+                    <li id=""><a href="http://127.0.0.1:5500/D%E1%BB%B0%20%C3%81N/index.html"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+                    <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
+                    <li id="form-DN"><a href="#"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
+                    
+
+                        
+                         <!-- =============================== sign - up =============== -->
+                        <!-- <li id="show-sign-up-form" onclick=" showForm()"><a href="#"><i class="fa-solid fa-user-plus"></i>Đăng ký</a> -->
+                             <div class="backround-sign-up-form" id="form-1" >
+                                <form action="" class="sign-up-form">
+                                    <div class="sign-up-form-content">
+                                        <div class="close-sign-up" id="close-sign-up"><i class="fa-solid fa-xmark"></i></div>
+                                        <div class="logo">
+                                            <img src="../image/logoun.png" alt="logo">Web Phone
+                                            <span>SHOP</span>
+                                        </div>
+                                        <div class="title">
+                                            <h2>Create An Account</h2>
+                                            <samp>To use member-exclusive services</samp>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form-item">
+                                                <label for="sign-up-name"><i class="fa-solid fa-user"></i> User Name</label>
+                                                <input type="text" id="sign-up-name" placeholder="nguyenvana">
+                                                <samp id="form-message-name"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                                                <input type="text" id="sign-up-phone" placeholder="0123456789">
+                                                <samp id="form-message-phone"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-password"><i class="fa-solid fa-key"></i> Password</label>
+                                                <input type="password" id="sign-up-password" placeholder="Vuong@1125">
+                                                <samp id="form-message-password"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-repassword"><i class="fa-solid fa-key"></i> Confirm Password</label>
+                                                <input type="sign-up-repassword" id="sign-up-repassword" placeholder="Vuong@1125">
+                                                <samp id="form-message-password-confirm"></samp>
+                                            </div>
+                                            
+                                        <button id="sign-up-btn" >Xác nhận</button>
+                                       
+                                        </div>
+                                    </div>
+                                </form>
+                                </div> 
+
+                        <!-- =============================== sign - in =============== -->
+                         <div class="backround-sign-in-form" id="form-2">
+                            <form action="" class="sign-in-form">
+                                
+                                <div class="sign-in-form-content">
+                                    <div class="close-sign-in" id="close-sign-in"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="logo">
+                                        <img src="../image/logoun.png" alt="logo">Web Phone
+                                        <span>SHOP</span>
+                                    </div>
+                                    <div class="title">
+                                        <h2>Sign In To Your Account</h2>
+                                        <samp>To access member-exclusive services</samp>
+                                    </div>
+                                    <div class="form">
+                                
+                                        <div class="form-item">
+                                            <label for="sign-in-name"><i class="fa-solid fa-user"></i> User Name</label>
+                                            <input type="text" id="sign-in-name" placeholder="vuquocvuong">
+                                            <samp id="form-message-name"></samp>
+                                        </div>
+                                        <div class="form-item">
+                                            <label for="sign-in-password"><i class="fa-solid fa-key"></i> Password</label>
+                                            <input type="password" id="sign-in-password" placeholder="Vuong@1125">
+                                            <samp id="form-message-password"></samp>
+                                        </div> 
+                                        <!-- onclick="checkPassword()" -->
+                                     <button id="sign-in-btn"  >Xác nhận</button>
+                                     <p>Bạn có tài khoản chưa?<a href="#" id="sign-up">Đăng kí ngay</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                </ul>
+            </div>
+        </nav>
+        <section class="menu3">
+            <div class="container">
+                <div class="menu3-content">
+                    <ul>
+                        <li><a href="./cart.html"><i class="fa-solid fa-mobile-button"></i>IPHONE</a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>SAMSUNG  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>REALME  </a> </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>OPPO  </a> </li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>XIAOMI  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>Phụ kiện  </a></li>
+                        
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------product--------------------------- -->
+        <section class="product">
+            <div class="container">
+                    <div class="product-top row">
+                        <p>Trang chủ </p> <span>&#10230;</span> <p> IPhone</p>  <span>&#10230;</span> <p> Iphone 15 ProMax 256GB</p>
+                    </div>
+                
+                <div class="product-content row">
+                    <div class="product-content-left">
+                        <div class="product-content-left-img ">
+                            <div class="product-content-left-name">
+                                <h1>Iphone 15 ProMax 256GB</h1>
+                            </div>
+                            <div class="product-content-left-infor">
+                                <img src="./image/iphone-15-pro-max-512gb.webp" alt="">
+                                <div class="product-content-left-text">
+                                    <h2>Thông tin sản phẩm</h2>
+                                    <div class="product-content-left-text-desktop">
+                                        <ul>
+                                            <li><i class="fa-solid fa-check"></i> Thiết kế khung viền từ titan chuẩn hàng không vũ trụ - Cực nhẹ, bền cùng viền cạnh mỏng cầm nắm thoải mái</li>
+                                            <li><i class="fa-solid fa-check"></i> Hiệu năng Pro chiến game thả ga - Chip A17 Pro mang lại hiệu năng đồ họa vô cùng sống động và chân thực</li>
+                                            <li><i class="fa-solid fa-check"></i> Thoả sức sáng tạo và quay phim chuyên nghiệp - Cụm 3 camera sau đến 48MP và nhiều chế độ tiên tiến</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="product-content-right">
+                        <div class="product-content-right-price row">
+                            <div class="product-content-right-price-one">
+                                <p1>1TB</p1>
+                                <P>44.290.000 <sup>đ</sup></P>
+                            </div>
+                            <div class="product-content-right-price-one">
+                                <p1>512GB</p1>
+                                <P>38.290.000 <sup>đ</sup></P>
+                            </div>
+                            <div class="product-content-right-price-one">
+                                <p1>256GB</p1>
+                                <P>32.290.000 <sup>đ</sup></P>
+                            </div>
+                        </div>
+                        <div class="product-content-right-color">
+                            <p><span style="font-weight: bold;">Màu sắc</p>
+                            <div class="product-content-right-color-one row">
+                                <div class="product-content-right-price-one">
+                                    <p1>Titan Đen</p1>
+                                </div>
+                                <div class="product-content-right-price-one">
+                                    <p1>Titan Trắng</p1>
+                                </div>
+                                <div class="product-content-right-price-one">
+                                    <p1>Titan Tự Nhiên</p1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quantity row">
+                            <p style="font-weight: bold; ">Số Lượng:</p>
+                            <input type="number " min="0" value="1" style="width:20px">
+                        </div>
+                        <div class="product-content-right-button">
+                            <button><i class="fa-solid fa-bag-shopping"></i><p>Mua Hàng</p></button>
+                        </div>
+                        <!-- ------------hiển thị chi tiết sản phẩm----------------- -->
+                        <div class="product-content-right-title">
+                            <div class="product-content-right-title-top">
+                                &#8893;
+                            </div>
+                            <div class="product-content-right-show">
+                                <div class="product-content-right-show-title row">
+                                    <div class="product-content-right-show-title-item " id="">
+                                        <p>Chi tiết</p>
+                                    </div>
+                                    <div class="product-content-right-show-title-item " id="baohanh">
+                                        <p>Bảo Hành</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="product-content-right-infor">
+                                    <div class="product-content-right-infor-chitiet">
+                                        iPhone 15 Pro Max thiết kế mới với chất liệu titan chuẩn hàng không vũ trụ bền bỉ, 
+                                        trọng lượng nhẹ, đồng thời trang bị nút Action và cổng sạc USB-C tiêu chuẩn giúp nâng cao tốc độ sạc. 
+                                        Khả năng chụp ảnh đỉnh cao của iPhone 15 bản Pro Max đến từ camera chính 48MP, 
+                                        camera UltraWide 12MP và camera telephoto có khả năng zoom quang học đến 5x. Bên cạnh đó, 
+                                        iPhone 15 ProMax sử dụng chip A17 Pro mới mạnh mẽ.
+                                    </div>
+                                    <div class="product-content-right-infor-baohanh">
+                                        1 ĐỔI 1 trong 30 ngày nếu có lỗi phần cứng nhà sản xuất. Bảo hành 12 tháng tại trung tâm bảo hành chính hãng Apple.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- --------------------footer----------------------------- -->
+         <section class="footer">
+            <div class="container">
+                <div class="container-content">
+                    <div class="container-content-text">
+                        <h3>Tổng đài hộ trợ miễn phí</h3>
+                        <li style="color: #fff;">Hotline: <a href="">0989.999.999</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Thông tin danh sách</h3>
+                            <li><a href="">Mua hàng và thanh toán Online</a></li>
+                            <li><a href="">Mua hàng trả góp Online</a></li>
+                            <li><a href="">Chính sách giao hàng</a></li>
+                            <li><a href="">Tra điểm Smember</a></li>
+                            <li><a href="">Xem ưu đãi Smember</a></li>
+                            <li><a href="">Tra thông tin bảo hành</a></li>
+                            <li><a href="">Tra cứu hoá đơn điện tử</a></li>
+                            <li><a href="">Thông tin hoá đơn mua hàng</a></li>
+                            <li><a href="">Trung tâm bảo hành chính hãng</a></li>
+                            <li><a href="">Quy định về việc sao lưu dữ liệu</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Dịch vụ khác</h3>
+                            <li><a href="">Ưu đãi thanh toán</a></li>
+                            <li><a href="">Quy chế hoạt động</a></li>
+                            <li><a href="">Chính sách Bảo hành</a></li>
+                    </div>
+                    <div class="container-content-text">
+                        <h3>Kết nối với chúng tôi</h3>
+                    </div>
+                </div>
+                <p>Copyright by SalePhoneWeb</p>
+            </div>
+        </section>
+    <script src="script.js"></script>
+    <script type="module" src="sign-up.js"></script>
+    <script type="module" src="sign-in.js"></script>
+    <script type="module" src="product.js"></script>
+    </div>
+</body>
+</html>

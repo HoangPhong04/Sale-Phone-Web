@@ -1,13 +1,4 @@
-const adress = document.querySelector('#adress-form')
-const adressclose = document.querySelector('#adress-close')
-// console.log (adress)
-// ---------- đóng mở khung ------------
-adress.addEventListener("click", function(){
-    document.querySelector('.adress-form').style.display = "flex"
-})
-adressclose.addEventListener("click", function(){
-    document.querySelector('.adress-form').style.display = "none"
-})
+
 // ----------------form-DN-DK--------------------
 function dangky(e){
     event.preventDefault();
@@ -41,17 +32,31 @@ function dangnhap(e){
         alert("Đăng nhập thất bại")
     }
 }
-// --------------mở-form-------------------
-const open = document.querySelector('#form-DN')
-const close = document.querySelector('#closeform')
-// console.log (adress)
-// ---------- đóng mở khung ------------
-open.addEventListener("click", function(){
-    document.querySelector('.form-DN').style.display = "flex"
-})
-close.addEventListener("click", function(){
-    document.querySelector('.form-DN').style.display = "none"
-})
+// // --------------mở-form-------------------
+// const open = document.querySelector('#form-DN')
+// const close = document.querySelector('#closeform')
+// // console.log (adress)
+// // ---------- đóng mở khung ------------
+// open.addEventListener("click", function(){
+//     document.querySelector('.form-DN').style.display = "flex"
+// })
+// close.addEventListener("click", function(){
+//     document.querySelector('.form-DN').style.display = "none"
+// })
+
+// const open1 = document.querySelector('#open-form-DK')
+// const close1 = document.querySelector('#close-form-DK')
+// // console.log (adress)
+// // ---------- đóng mở khung ------------
+// open1.addEventListener("click", function(){
+//     document.querySelector('.address-form').style.display = "flex"
+// })
+// open1.addEventListener("click", function(){
+//     document.querySelector('.form-DN').style.display = "none"
+// })
+// close1.addEventListener("click", function(){
+//     document.querySelector('.address-form').style.display = "none"
+// })
 // ------------------slider ------------------
 const rightrun = document.querySelector('.fa-angle-right')
 const leftrun = document.querySelector('.fa-angle-left')

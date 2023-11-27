@@ -5,92 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="sign-in.css">
     <title>Web mobile</title>
 </head>
 <body>
     <div class="body">
-        <header>
-            <img style="height: 40px;" src="./image/banner1.webp" alt="">
+        <header >
+            <!-- <img style="height: 40px;" src="./image/banner1.webp" alt="">
             <img style="height: 40px;" src="./image/banner2.webp">
-            <img style="height: 40px;" src="./image/banner3.webp">
+            <img style="height: 40px;" src="./image/banner3.webp"> -->
         </header>
 
         <nav>
             <div class="container">
                 <ul>
                     <li><a href=""><img style="width: 150px;" src="image/logo.png"></a></li>
-                    <li id="adress-form"><a href="#"><i class="fa-solid fa-location-dot"></i> TP HCM<i class="fas fa-sort-down"></i></a></li>
-                    <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa-solid fa-magnifying-glass"></i></li>               
-                    <li><a href=""><i class="fa-solid fa-phone"></i>Gọi mua hàng <br> 0987654321</a></li>
-                    <li><a href=""><i class="fa-solid fa-truck-fast"></i>Tra cứu đơn hàng</a></li>
-                    <li><a href=""><i class="fa-solid fa-list"></i>Danh mục</a></li>
-                    <li><a href=""></a><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>
+                    <li id=""><a href="http://127.0.0.1:5500/D%E1%BB%B0%20%C3%81N/index.html"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+                    <li><input type="text" placeholder="Bạn cần tìm gì?"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
                     <li id="form-DN"><a href="#"><i class="fa-solid fa-user"></i>Đăng nhập</a></li>
-                        <div class="adress-form">
-                            <div class="adress-form-content">
-                                <h2>Chọn địa chỉ nhận hàng <span id="adress-close"><i class="fa-solid fa-xmark"></i></span></h2>
-                                <form action="">
-                                    <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
-                                    <select name="" >
-                                        <option value="">--Chọn đỉa điểm</option>
-                                        <option value="">--TP HCM</option>
-                                    </select>
-                                    <select name="">
-                                        <option value="">--Chọn Quận\Huyện </option>
-                                        <option value="">--TP HCM</option>
-                                    </select>
-                                    <select name="" >
-                                        <option value="">--Chọn Phường\Xã</option>
-                                        <option value="">--TP HCM</option>
-                                    </select>
-                                    <input type="text" placeholder="Số nhà, Tên đường">
-                                    <button>Xác nhận</button>
+                    
+
+                        
+                         <!-- =============================== sign - up =============== -->
+                        <!-- <li id="show-sign-up-form" onclick=" showForm()"><a href="#"><i class="fa-solid fa-user-plus"></i>Đăng ký</a> -->
+                             <div class="backround-sign-up-form" id="form-1" >
+                                <form action="" class="sign-up-form">
+                                    <div class="sign-up-form-content">
+                                        <div class="close-sign-up" id="close-sign-up"><i class="fa-solid fa-xmark"></i></div>
+                                        <div class="logo">
+                                            <img src="../image/logoun.png" alt="logo">Web Phone
+                                            <span>SHOP</span>
+                                        </div>
+                                        <div class="title">
+                                            <h2>Create An Account</h2>
+                                            <samp>To use member-exclusive services</samp>
+                                        </div>
+                                        <div class="form">
+                                            <div class="form-item">
+                                                <label for="sign-up-name"><i class="fa-solid fa-user"></i> User Name</label>
+                                                <input type="text" id="sign-up-name" placeholder="nguyenvana">
+                                                <samp id="form-message-name"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                                                <input type="text" id="sign-up-phone" placeholder="0123456789">
+                                                <samp id="form-message-phone"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-password"><i class="fa-solid fa-key"></i> Password</label>
+                                                <input type="password" id="sign-up-password" placeholder="Vuong@1125">
+                                                <samp id="form-message-password"></samp>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sign-up-repassword"><i class="fa-solid fa-key"></i> Confirm Password</label>
+                                                <input type="sign-up-repassword" id="sign-up-repassword" placeholder="Vuong@1125">
+                                                <samp id="form-message-password-confirm"></samp>
+                                            </div>
+                                            
+                                        <button id="sign-up-btn" >Xác nhận</button>
+                                       
+                                        </div>
+                                    </div>
                                 </form>
-                            </div>
-                        </div>
+                                </div> 
 
-                        <section class="form-DN">
-                            <div class="form-DN-content">
-                                <h2>ĐĂNG NHẬP <span id="closeform"><i class="fa-solid fa-xmark"></i></span></h2>
-                                <form onsubmit="dangnhap()">
-                                    <div class="input-field">
-                                        <input id="username" type="text" placeholder="User name">
-                                    </div>
-                                    <div class="input-field">
-                                        <input id="password" type="text" placeholder="Password">
-                                    </div>
-                                    <button id="btn" class="btn">Xác Nhận</button>
-                                    <p>Bạn chưa có tài khoản? <a href="">Đăng ký</a></p>
-                                </form>     
+                        <!-- =============================== sign - in =============== -->
+                         <div class="backround-sign-in-form" id="form-2">
+                            <form action="" class="sign-in-form">
                                 
-                            </div>
-                        </section>
-
-                        <ul>
-                            <div class="address-form">
-                                <div class="form-content1">
-                                    <h2>ĐĂNG KÝ <span id="close-form-DK"><i class="fa-solid fa-xmark"></i></span></h2>
+                                <div class="sign-in-form-content">
+                                    <div class="close-sign-in" id="close-sign-in"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="logo">
+                                        <img src="../image/logoun.png" alt="logo">Web Phone
+                                        <span>SHOP</span>
+                                    </div>
+                                    <div class="title">
+                                        <h2>Sign In To Your Account</h2>
+                                        <samp>To access member-exclusive services</samp>
+                                    </div>
+                                    <div class="form">
                                 
-                                    <form onsubmit="dangky()">
-                                        <div class="input-field">
-                                            <input id="username" type="text" placeholder="User name">
+                                        <div class="form-item">
+                                            <label for="sign-in-name"><i class="fa-solid fa-user"></i> User Name</label>
+                                            <input type="text" id="sign-in-name" placeholder="vuquocvuong">
+                                            <samp id="form-message-name"></samp>
                                         </div>
-                                        <div class="input-field">
-                                            <input id="email" type="text" placeholder="Email">
-                                        </div>
-                                        <div class="input-field">
-                                            <input id="password" type="text" placeholder="Password">
-                                        </div>
-                                        <div class="input-field">
-                                            <input id="password" type="text" placeholder="Comfirm password">
-                                        </div>
-                                        <button id="btndangky" class="btn">Xác Nhận</button>
-                                    </form>     
-                                        
-                                        <p>Đã có tài khoản <i class="fa-solid fa-arrow-right"></i><a href="">Đăng nhập</a></p>
+                                        <div class="form-item">
+                                            <label for="sign-in-password"><i class="fa-solid fa-key"></i> Password</label>
+                                            <input type="password" id="sign-in-password" placeholder="Vuong@1125">
+                                            <samp id="form-message-password"></samp>
+                                        </div> 
+                                        <!-- onclick="checkPassword()" -->
+                                     <button id="sign-in-btn"  >Xác nhận</button>
+                                     <p>Bạn có tài khoản chưa?<a href="#" id="sign-up">Đăng kí ngay</a></p>
+                                    </div>
                                 </div>
-                            </div>
-                        </ul>
+                            </form>
+                        </div> 
                 </ul>
             </div>
         </nav>
@@ -98,102 +111,12 @@
             <div class="container">
                 <div class="menu3-content">
                     <ul>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>IPHONE  <i  class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>SAMSUNG  <i class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>REALME  <i class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>OPPO  <i class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>VIVO  <i class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>Phụ kiện  <i class="fas fa-sort-down"></i></a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-                                    <li><a href="">Apple</a></li>
-
-                                </ul>
-                            </div>
-                        </li>
+                        <li><a href="./cart.html"><i class="fa-solid fa-mobile-button"></i>IPHONE</a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>SAMSUNG  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>REALME  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>OPPO  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>XIAOMI  </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile-button"></i>Phụ kiện  </a> </li>
                         
                 </div>
             </div>
@@ -748,6 +671,9 @@
             </div>
         </section>
     <script src="script.js"></script>
+    <script type="module" src="sign-up.js"></script>
+    <script type="module" src="sign-in.js"></script>
+    <script type="module" src="product.js"></script>
     </div>
 </body>
 </html>

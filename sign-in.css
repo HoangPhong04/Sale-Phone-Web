@@ -1,0 +1,148 @@
+
+:root{
+    --main-color: rgb(56, 22, 208)
+}
+/* -------------sign-in------------- */
+.backround-sign-in-form{
+    position: fixed;
+    background-color: #55454574;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    z-index: 99999;
+}
+.backround-sign-in-form .sign-in-form{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    border-radius: 15px;
+}
+
+.backround-sign-in-form .sign-in-form .sign-in-form-content{
+    position: relative;
+    align-items: center;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .close-sign-in{
+    position: absolute;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgba(114, 104, 104, 0.511);
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    padding-left: 13px;
+    border-radius: 8px;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .logo{
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 25px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .logo img{
+    width: 60px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .logo span{
+    font-size:15px ;
+    color: var(--main-color);
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .title{
+    color: black;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .title h2{
+    color: black;
+    font-size: 40px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .title span{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form{
+    display: block;
+    padding: 10px 20px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    column-gap: 10px;
+    margin-top: 40px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item #form-message-name{
+    position: absolute;
+    left: 7px;
+    top: 50px;
+    color: rgb(204, 91, 91);
+    display: none;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item #form-message-password{
+    position: absolute;
+    left: 7px;
+    top: 50px;
+    color: rgb(204, 91, 91);
+    display: block;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item input{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    font-size:15px ;
+    padding-left: 20px;
+    border: 1px solid blue;
+}
+
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item input::placeholder{
+    /* padding-left: 10px; */
+    font-size: 15px;
+    align-items: center;
+    font-weight: 500;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 2px 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form .form-item i{
+    padding-right: 5px;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content .form button{
+    margin-top: 50px;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(15, 130, 218);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: none;
+    transition:  0.3 ease;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content p{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: red;
+}
+.backround-sign-in-form .sign-in-form .sign-in-form-content a{
+    color: blue;
+    margin-left: 10px;
+    }
+
+
